@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Supermarket</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>Supermarket</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#" class="active">All Products</a></li>
+        <li><a href="#">Fruits & Vegetables</a></li>
+        <li><a href="#">Meat & Seafood</a></li>
+        <li><a href="#">Dairy & Eggs</a></li>
+        <li><a href="#">Bakery & Pastry</a></li>
+        <li><a href="#">Beverages</a></li>
+        <li><a href="#">Snacks & Candy</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="sort">
+        <label>Sort by:</label>
+        <select id="sort-select">
+          <option value="price-asc">Price (low to high)</option>
+          <option value="price-desc">Price (high to low)</option>
+          <option value="brand-asc">Brand name (A to Z)</option>
+          <option value="brand-desc">Brand name (Z to A)</option>
+        </select>
+      </div>
+      <ul id="product-list">
+        <li class="product">
+          <div class="product-img">
+            <img src="product1.jpg" alt="Product 1">
+          </div>
+          <div class="product-info">
+            <h2>Product 1</h2>
+            <p>Brand: A</p>
+            <p>Price: $10.00</p>
+          </div>
+        </li>
+        <li class="product">
+          <div class="product-img">
+            <img src="product2.jpg" alt="Product 2">
+          </div>
+          <div class="product-info">
+            <h2>Product 2</h2>
+            <p>Brand: B</p>
+            <p>Price: $15.00</p>
+          </div>
+        </li>
+        <li class="product">
+          <div class="product-img">
+            <img src="product3.jpg" alt="Product 3">
+          </div>
+          <div class="product-info">
+            <h2>Product 3</h2>
+            <p>Brand: C</p>
+            <p>Price: $20.00</p>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <footer>
+      <p>&copy; 2023 Supermarket</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
